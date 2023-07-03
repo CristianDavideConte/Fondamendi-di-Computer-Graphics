@@ -1,0 +1,17 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: la directory intermedia (x64\Debug\) contiene file condivisi da un altro progetto (Esercitazione 1a.vcxproj). Tale condizione può comportare un comportamento di pulizia e ricompilazione non corretto.
+  LAB_01.cpp
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_01\Esercitazione 1\LAB_01.cpp(67,41): warning C4305: 'inizializzazione': troncamento da 'double' a 'float'
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_01\Esercitazione 1\LAB_01.cpp(216,42): warning C4244: '=': conversione da 'const _Ty' a 'float'. Possibile perdita di dati.
+          with
+          [
+              _Ty=double
+          ]
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_01\Esercitazione 1\LAB_01.cpp(220,42): warning C4244: '=': conversione da 'const _Ty' a 'float'. Possibile perdita di dati.
+          with
+          [
+              _Ty=double
+          ]
+  ShaderMaker.cpp
+  Generazione del codice in corso...
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_01\Esercitazione 1\LAB_01.cpp(318): warning C4172: verrà restituito l'indirizzo del valore : iterArray temporaneo o della variabile locale
+  Esercitazione 1a.vcxproj -> F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_01\Esercitazione 1\x64\Debug\Esercitazione 1.exe
