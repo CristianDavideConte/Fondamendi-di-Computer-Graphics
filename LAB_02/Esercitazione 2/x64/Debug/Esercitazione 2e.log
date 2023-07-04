@@ -23,6 +23,6 @@ F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\HIGHWAY_S
 F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\HIGHWAY_SURFER.cpp(732,69): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
 F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\HIGHWAY_SURFER.cpp(734,71): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
 F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\HIGHWAY_SURFER.cpp(736,73): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\HIGHWAY_SURFER.cpp(984,24): warning C4244: 'argomento': conversione da '__int64' a 'unsigned int'. Possibile perdita di dati.
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\HIGHWAY_SURFER.cpp(1067,46): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\HIGHWAY_SURFER.cpp(1003,24): warning C4244: 'argomento': conversione da '__int64' a 'unsigned int'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\HIGHWAY_SURFER.cpp(1086,46): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
   Esercitazione 2e.vcxproj -> F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\x64\Debug\Esercitazione 2.exe
