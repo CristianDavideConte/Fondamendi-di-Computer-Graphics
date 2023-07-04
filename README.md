@@ -4,4 +4,5 @@ In questa repo sono presenti cartelle contenenti:
 - report di ogni esercitazione
 - pdf contenente le richieste di ogni esercitazione
 - eventuali file aggiuntivi specifici (screenshot, video dimostrativi, etc...) <br/>
-Autore: Cristian Davide Conte
+
+### Autore: Cristian Davide Conte
