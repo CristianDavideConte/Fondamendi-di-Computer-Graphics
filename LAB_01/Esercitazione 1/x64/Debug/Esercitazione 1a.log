@@ -11,7 +11,5 @@ F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_01\Esercitazione 1\LAB_01.cp
           [
               _Ty=double
           ]
-  ShaderMaker.cpp
-  Generazione del codice in corso...
 F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_01\Esercitazione 1\LAB_01.cpp(318): warning C4172: verrà restituito l'indirizzo del valore : iterArray temporaneo o della variabile locale
   Esercitazione 1a.vcxproj -> F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_01\Esercitazione 1\x64\Debug\Esercitazione 1.exe

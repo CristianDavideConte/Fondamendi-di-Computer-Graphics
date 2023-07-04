@@ -130,7 +130,7 @@ void myKeyboardFunc(unsigned char key, int x, int y)
 		TCBAlpha = 0.5f;
 		glutPostRedisplay();
 		break;
-	case 27:			// Escape key
+	case 27: // Escape key
 		exit(0);
 		break;
 	}
@@ -360,11 +360,12 @@ void estimateTCBLeftTangent(float points[MaxNumPts][2], int index, int length, f
 		nextPoint = points[index + 1];
 	}
 
-	L[0] = (1 - tension + alpha) * (1 - continuity) * (1 + bias) / 2.0f * (points[index][0] - prevPoint[0]) +
-		   (1 - tension + alpha) * (1 + continuity) * (1 - bias) / 2.0f * (nextPoint[0] - points[index][0]);
+	//alpha crea una differenza di tensione tra L e R
+	L[0] = (1 - tension - alpha) * (1 - continuity) * (1 + bias) / 2.0f * (points[index][0] - prevPoint[0]) +
+		   (1 - tension - alpha) * (1 + continuity) * (1 - bias) / 2.0f * (nextPoint[0] - points[index][0]);
 
-	L[1] = (1 - tension + alpha) * (1 - continuity) * (1 + bias) / 2.0f * (points[index][1] - prevPoint[1]) +
-		   (1 - tension + alpha) * (1 + continuity) * (1 - bias) / 2.0f * (nextPoint[1] - points[index][1]);
+	L[1] = (1 - tension - alpha) * (1 - continuity) * (1 + bias) / 2.0f * (points[index][1] - prevPoint[1]) +
+		   (1 - tension - alpha) * (1 + continuity) * (1 - bias) / 2.0f * (nextPoint[1] - points[index][1]);
 }
 
 //Estimate the R value of TCB Spline
@@ -385,11 +386,12 @@ void estimateTCBRightTangent(float points[MaxNumPts][2], int index, int length, 
 		nextPoint = points[index + 1];
 	}
 
-	R[0] = (1 - tension - alpha) * (1 - continuity) * (1 + bias) / 2.0f * (points[index][0] - prevPoint[0]) +
-		   (1 - tension - alpha) * (1 + continuity) * (1 - bias) / 2.0f * (nextPoint[0] - points[index][0]);
+	//alpha crea una differenza di tensione tra L e R
+	R[0] = (1 - tension + alpha) * (1 - continuity) * (1 + bias) / 2.0f * (points[index][0] - prevPoint[0]) +
+		   (1 - tension + alpha) * (1 + continuity) * (1 - bias) / 2.0f * (nextPoint[0] - points[index][0]);
 
-	R[1] = (1 - tension - alpha) * (1 + continuity) * (1 + bias) / 2.0f * (points[index][1] - prevPoint[1]) +
-		   (1 - tension - alpha) * (1 - continuity) * (1 - bias) / 2.0f * (nextPoint[1] - points[index][1]);
+	R[1] = (1 - tension + alpha) * (1 + continuity) * (1 + bias) / 2.0f * (points[index][1] - prevPoint[1]) +
+		   (1 - tension + alpha) * (1 - continuity) * (1 - bias) / 2.0f * (nextPoint[1] - points[index][1]);
 }
 
 
