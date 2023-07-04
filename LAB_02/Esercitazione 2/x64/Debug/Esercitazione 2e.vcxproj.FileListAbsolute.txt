@@ -1,0 +1,3 @@
+D:\Fondamenti di Computer Graphics\Es 2\Esercitazione 2e\x64\Debug\Esercitazione 2e.exe
+C:\Users\crist\Desktop\Fondamenti di Computer Graphics\Es 2\Esercitazione 2e\x64\Debug\Esercitazione 2e.exe
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\x64\Debug\Esercitazione 2.exe
