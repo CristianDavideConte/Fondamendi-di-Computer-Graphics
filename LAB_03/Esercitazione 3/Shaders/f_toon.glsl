@@ -1,4 +1,4 @@
-// Fragment shader: : Phong shading
+// Fragment shader: : Toon shading
 // ================
 #version 450 core
 

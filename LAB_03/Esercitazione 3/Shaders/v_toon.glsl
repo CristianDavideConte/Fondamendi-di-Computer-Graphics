@@ -25,7 +25,7 @@ uniform mat4 M; // position*rotation*scaling
 uniform PointLight light;
 
 
-void main()
+void main() //Blinn
 {
     gl_Position = P * V * M * vec4(aPos, 1.0);
 

@@ -238,8 +238,8 @@ void drawAxisAndGrid();
 // 2D fixed pipeline Font rendering on screen
 void printToScreen();
 
-long long get_current_time() {
-	return chrono::duration_cast<chrono::milliseconds>(chrono::steady_clock::now().time_since_epoch()).count();
+float get_current_time() {
+	return clock();
 }
 
 void init_light_object() {
@@ -444,7 +444,6 @@ void initShader()
 	base_unif.P_Matrix_pointer = glGetUniformLocation(shaders_IDs[TOON], "P");
 	base_unif.V_Matrix_pointer = glGetUniformLocation(shaders_IDs[TOON], "V");
 	base_unif.M_Matrix_pointer = glGetUniformLocation(shaders_IDs[TOON], "M");
-	base_unif.time_delta_pointer = glGetUniformLocation(shaders_IDs[TOON], "current_time");
 	base_uniforms[ShadingType::TOON] = base_unif;
 	light_unif.material_ambient = glGetUniformLocation(shaders_IDs[TOON], "material.ambient");
 	light_unif.material_diffuse = glGetUniformLocation(shaders_IDs[TOON], "material.diffuse");
@@ -625,7 +624,7 @@ void drawScene() {
 			// Caricamento matrice trasformazione del modello
 			glUniformMatrix4fv(base_uniforms[WAVE].M_Matrix_pointer, 1, GL_FALSE, value_ptr(objects[i].M));
 			// Time setting
-			glUniform1f(base_uniforms[WAVE].time_delta_pointer, clock());
+			glUniform1f(base_uniforms[WAVE].time_delta_pointer, get_current_time());
 			//Material loading
 			glUniform3fv(light_uniforms[WAVE].material_ambient, 1, glm::value_ptr(materials[objects[i].material].ambient));
 			glUniform3fv(light_uniforms[WAVE].material_diffuse, 1, glm::value_ptr(materials[objects[i].material].diffuse));
@@ -959,25 +958,25 @@ void moveCameraBack()
 
 void moveCameraLeft()
 {
-	//upVector è il vettore/asse Y
-	//direction è il vettore tra l'orgine e il punto della View 
-	//slide vector non è altro che l'asse x traslata nella posizione della View
-	//ViewSetup.position è C nel WCS
-	//ViewSetup.target è A nel WCS
+	//ViewSetup.upVector è il vettore VUP/asse Y
+	//direction è w
+	//slide_vector è il vettore di spostamento orizzontale
+	//ViewSetup.position è C 
+	//ViewSetup.target è A
 	glm::vec3 direction = ViewSetup.target - ViewSetup.position;
 	glm::vec3 slide_vector = glm::normalize(glm::cross(direction, glm::vec3(ViewSetup.upVector)));
-	glm::vec3 slideDirection = slide_vector * CAMERA_TRASLATION_SPEED_X;
-	ViewSetup.position += glm::vec4(slideDirection, 0.0);
-	ViewSetup.target += glm::vec4(slideDirection, 0.0);
+	glm::vec3 slide_delta_vec = slide_vector * CAMERA_TRASLATION_SPEED_X;
+	ViewSetup.position += glm::vec4(slide_delta_vec, 0.0);
+	ViewSetup.target += glm::vec4(slide_delta_vec, 0.0);
 }
 
 void moveCameraRight()
 {
 	glm::vec3 direction = ViewSetup.target - ViewSetup.position;
 	glm::vec3 slide_vector = glm::normalize(glm::cross(direction, glm::vec3(ViewSetup.upVector)));
-	glm::vec3 slideDirection = slide_vector * CAMERA_TRASLATION_SPEED_X;
-	ViewSetup.position -= glm::vec4(slideDirection, 0.0);
-	ViewSetup.target -= glm::vec4(slideDirection, 0.0);
+	glm::vec3 slide_delta_vec = slide_vector * CAMERA_TRASLATION_SPEED_X;
+	ViewSetup.position -= glm::vec4(slide_delta_vec, 0.0);
+	ViewSetup.target -= glm::vec4(slide_delta_vec, 0.0);
 }
 
 void moveCameraUp()
@@ -1013,7 +1012,6 @@ void modifyModelMatrix(glm::vec3 translation_vector, glm::vec3 rotation_vector, 
 	}
 
 	if (TransformMode == WCS) {
-		//OCS -> WCS
 		objects[selected_obj].M = glm::inverse(objects[selected_obj].M);
 
 		//rototranslation + scaling
@@ -1021,7 +1019,6 @@ void modifyModelMatrix(glm::vec3 translation_vector, glm::vec3 rotation_vector, 
 		objects[selected_obj].M = glm::translate(objects[selected_obj].M, translation_vector);
 		objects[selected_obj].M = glm::rotate(objects[selected_obj].M, angle, rotation_vector);
 
-		//WCS -> OCS
 		objects[selected_obj].M = glm::inverse(objects[selected_obj].M);
 	} else if (TransformMode == OCS) {
 		//rototranslation + scaling
