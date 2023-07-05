@@ -1,8 +1,8 @@
 # Fondamendi di Computer Graphics M
 In questa repo sono presenti cartelle contenenti: 
-- file relativi alle esercitazioni (C++, GLSL, blender, etc...)
+- file relativi alle esercitazioni (C++, GLSL, blender, ecc...)
 - report di ogni esercitazione
 - pdf contenenti le richieste di ogni esercitazione
-- eventuali file aggiuntivi specifici (screenshot, video dimostrativi, etc...) <br/>
+- eventuali file aggiuntivi specifici (screenshot, video dimostrativi, ecc...) <br/>
 
 ### Autore: Cristian Davide Conte
