@@ -1,0 +1,23 @@
+﻿  LAB_03.cpp
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_03\Esercitazione 3\LAB_03.cpp(424,53): warning C4244: '=': conversione da 'GLint' a 'GLfloat'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_03\Esercitazione 3\LAB_03.cpp(447,53): warning C4244: '=': conversione da 'GLint' a 'GLfloat'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_03\Esercitazione 3\LAB_03.cpp(570,31): warning C4305: 'argomento': troncamento da 'double' a 'GLclampf'
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_03\Esercitazione 3\LAB_03.cpp(628,61): warning C4244: 'argomento': conversione da 'clock_t' a 'GLfloat'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_03\Esercitazione 3\LAB_03.cpp(628,35): warning C4244: 'argomento': conversione da 'GLfloat' a 'GLint'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_03\Esercitazione 3\LAB_03.cpp(642,64): warning C4267: 'argomento': conversione da 'size_t' a 'GLsizei'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_03\Esercitazione 3\LAB_03.cpp(660,12): warning C4244: 'inizializzazione': conversione da 'GLfloat' a 'int'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_03\Esercitazione 3\LAB_03.cpp(778,47): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_03\Esercitazione 3\LAB_03.cpp(778,44): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_03\Esercitazione 3\LAB_03.cpp(779,57): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_03\Esercitazione 3\LAB_03.cpp(779,39): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_03\Esercitazione 3\LAB_03.cpp(787,15): warning C4244: 'inizializzazione': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_03\Esercitazione 3\LAB_03.cpp(837,74): warning C4267: '=': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_03\Esercitazione 3\LAB_03.cpp(943,35): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_03\Esercitazione 3\LAB_03.cpp(944,19): warning C4244: '=': conversione da 'double' a 'T'. Possibile perdita di dati.
+          with
+          [
+              T=float
+          ]
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_03\Esercitazione 3\LAB_03.cpp(1197,57): warning C4267: 'argomento': conversione da 'size_t' a 'GLsizei'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_03\Esercitazione 3\LAB_03.cpp(1206,57): warning C4267: 'argomento': conversione da 'size_t' a 'GLsizei'. Possibile perdita di dati.
+  Esercitazione 3.vcxproj -> F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_03\Esercitazione 3\x64\Debug\Esercitazione 3.exe
