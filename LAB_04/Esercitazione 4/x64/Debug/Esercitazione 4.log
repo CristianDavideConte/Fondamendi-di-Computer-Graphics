@@ -1,0 +1,59 @@
+﻿  LAB_04_students.cpp
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\mesh.h(37,1): warning C4267: 'return': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\mesh.h(71,1): warning C4267: 'return': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\mesh.h(91,1): warning C4267: 'return': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+  face.cpp
+  glCanvas.cpp
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\mesh.h(37,1): warning C4267: 'return': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\mesh.h(71,1): warning C4267: 'return': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\mesh.h(91,1): warning C4267: 'return': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\glCanvas.cpp(49,17): warning C4244: 'inizializzazione': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\glCanvas.cpp(52,93): warning C4305: 'argomento': troncamento da 'double' a 'float'
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\glCanvas.cpp(70,40): warning C4305: 'argomento': troncamento da 'double' a 'float'
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\glCanvas.cpp(105,45): warning C4305: 'inizializzazione': troncamento da 'double' a 'GLfloat'
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\glCanvas.cpp(123,43): warning C4305: 'inizializzazione': troncamento da 'double' a 'float'
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\glCanvas.cpp(207,52): warning C4244: 'argomento': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\glCanvas.cpp(207,30): warning C4244: 'argomento': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\glCanvas.cpp(215,56): warning C4244: 'argomento': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\glCanvas.cpp(215,36): warning C4244: 'argomento': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\glCanvas.cpp(225,31): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\glCanvas.cpp(229,32): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\glCanvas.cpp(276,17): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\glCanvas.cpp(276,14): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\glCanvas.cpp(385,11): warning C4244: 'inizializzazione': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\glCanvas.cpp(386,11): warning C4244: 'inizializzazione': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\glCanvas.cpp(418,15): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\glCanvas.cpp(423,41): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\glCanvas.cpp(423,27): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\glCanvas.cpp(463,15): warning C4244: 'argomento': conversione da 'int' a 'GLfloat'. Possibile perdita di dati.
+  mesh.cpp
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\mesh.h(37,1): warning C4267: 'return': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\mesh.h(71,1): warning C4267: 'return': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\mesh.h(91,1): warning C4267: 'return': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\mesh.cpp(60,15): warning C4244: 'inizializzazione': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\mesh.cpp(61,11): warning C4244: 'inizializzazione': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\mesh.cpp(85,32): warning C4267: 'inizializzazione': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\mesh.cpp(292,31): warning C4267: 'inizializzazione': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+  radiosity.cpp
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\mesh.h(37,1): warning C4267: 'return': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\mesh.h(71,1): warning C4267: 'return': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\mesh.h(91,1): warning C4267: 'return': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\radiosity.cpp(176,14): warning C4244: 'inizializzazione': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\radiosity.cpp(262,28): warning C4305: 'argomento': troncamento da 'double' a 'GLfloat'
+  raytracer_students.cpp
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\mesh.h(37,1): warning C4267: 'return': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\mesh.h(71,1): warning C4267: 'return': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\mesh.h(91,1): warning C4267: 'return': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\raytracer_students.cpp(126,45): warning C4267: 'inizializzazione': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\raytracer_students.cpp(143,39): warning C4305: 'inizializzazione': troncamento da 'double' a 'float'
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\raytracer_students.cpp(194,69): warning C4305: 'argomento': troncamento da 'double' a 'float'
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\raytracer_students.cpp(206,66): warning C4305: 'argomento': troncamento da 'double' a 'float'
+  sphere.cpp
+  Generazione del codice in corso...
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\face.h(52): warning C4715: 'Face::operator[]': non tutti i percorsi di controllo restituiscono un valore
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\radiosity.cpp(184): warning C4715: 'Radiosity::whichVisualization': non tutti i percorsi di controllo restituiscono un valore
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\face.h(52): warning C4715: 'Face::operator[]': non tutti i percorsi di controllo restituiscono un valore
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\edge.h(58): warning C4715: 'Edge::operator[]': non tutti i percorsi di controllo restituiscono un valore
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\face.h(52): warning C4715: 'Face::operator[]': non tutti i percorsi di controllo restituiscono un valore
+F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\face.h(52): warning C4715: 'Face::operator[]': non tutti i percorsi di controllo restituiscono un valore
+  Esercitazione 4.vcxproj -> F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\x64\Debug\Esercitazione 4.exe
