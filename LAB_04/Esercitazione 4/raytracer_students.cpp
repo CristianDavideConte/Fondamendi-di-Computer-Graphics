@@ -137,6 +137,7 @@ RayTracer::TraceRay (Ray & ray, Hit & hit, int bounce_count) const
 	  //Crea soft shadows se specificato da riga di comando.
 	  //Altrimenti usa le hard shadows.
 	  if (args->softShadow) {
+		  /*
 		  //La light area viene divisa tramite una griglia di (1 / increment_factor)^2 punti.
 		  //Ogni punto della griglia viene utilizzato per il calcolo della soft shadow.
 		  Vec3f v_start, v_end;
@@ -155,14 +156,12 @@ RayTracer::TraceRay (Ray & ray, Hit & hit, int bounce_count) const
 				  pointsOnLight.push_back(lerp(v_start, v_end, k));
 			  }
 		  }
+		  */
 
-		  /*
-		  //Random interpolation between the face vertices,
-		  //yields a worst result
+		  //Random interpolation between the face vertices (better looking)
 		  for (int i = 0; i < 100; i++) {
 			  pointsOnLight.push_back(f->RandomPoint());
 		  }
-		  */
 	  } else {
 		  //La luce è approssimata ad un punto solo (hard shadows)
 		  pointsOnLight.push_back(f->computeCentroid()); 

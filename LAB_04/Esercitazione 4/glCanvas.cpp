@@ -54,7 +54,7 @@ GLCanvas::initialize (ArgParser * _args, Mesh * _mesh, RayTracer * _raytracer, R
   glutInitDisplayMode (GLUT_DOUBLE | GLUT_DEPTH | GLUT_RGB);
   glutInitWindowSize (args->width, args->height);
   glutInitWindowPosition (100, 100);
-  glutCreateWindow ("OpenGL Viewer");
+  glutCreateWindow ("Ray Tracing - Cristian Davide Conte");
 
   // Set global lighting parameters
   glEnable (GL_LIGHTING);
