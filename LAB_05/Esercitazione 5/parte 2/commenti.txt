@@ -1,0 +1,29 @@
+1) L'angioletto ha le normali al contrario, ecco perchè si vede la parte sbagliata della mesh.
+   Procedimento: Filters -> Normals, Curvatures and orientations -> Invert faces orientations
+
+2) Minerva è una range-image (si vede dalle facce che sono quadrilateri), però ha dei punti che non ci interessano (parti non connesse dietro la faccia), e ha dei buchi.
+   Procedimento: - Tasto "Select connected components regions" (rosso a dx nella barra dei pulsanti) -> selezione le parti di mesh che non mi interessano, poi le cancello
+                 - Filters -> "Remeshing, Simplifications and reconstructions" -> Close Holes -> vedo che con 30 non si chiudono tutti i buchi.
+                   Tasto "Select components in rectangular regions" (rosso a dx nella barra dei pulsanti vicino a quello di prima) -> seleziono le parti con i buchi ->
+                         "Remeshing, Simplifications and reconstructions" -> Close Holes -> 200 (perchè i buchi sono grandi)
+   Nota che il "Close holes" funziona solo se definisco dei boundaries (e chiude all'interno di quel boundary), altrimenti no.
+
+3) Nuvola di punti che forma un camaleonte, io ho bisogno della triangolazione
+   Soluzione: Metodo di poisson (si crea una isosuperficie tramite superficie implicita)
+   Procedimento: Filters -> "Remeshing, Simplifications and reconstructions" -> Surface reconstructions: screened poisson (parametri di default) 
+                         -> superficie però ora non è connessa (la lingua è staccata -> cambiare i parametri)	    
+     
+4) Stella perturb che non ha una curvatura smooth (fairing)
+   Soluzione: Applicare il Laplaciano discreto visto a lezione (fairing)
+   Procedimento: Filters -> Smoothing Fairing deformations -> HC Laplacian Smoothing -> la superficie non è ancora smooth: ripetere 5 volte in totale in modo che la superficie venga liscia (smooth)
+
+   Per mostrare le curvature della mesh: Filters -> Normals, Curvatures and orientations -> discrete curvatures -> poi scegli tra mean curvatures/gaussian curvatures 
+   Per vedere di quanto due mesh: Importo entrambe le mesh (-> mostro la curvatura e vedo che quella perturbata "esce" dall'altra) -> Filters -> Sampling -> Hausdorff distance
+   Distanza di Hausdorff: per ogni punto delle due mesh andiamo a vedere qual è il punto più vicino nell'altra mesh, prendiamo il minimo, poi rifacciamo lo stesso procedimento con le mesh scambiate e prendo il massimo.
+5) Gargoile, mesh irregolare (non strutturata si vede dalla forma dei triangoli), vogliamo ridurre il numero dei triangoli (decimation)
+   Procedimento: Filters -> "Remeshing, Simplifications and reconstructions" -> Simplification: Quadric Edge Collapse Decimation -> percentage reduction = 0.6 ->
+                 -> il numero di facce si riduce ma la forma viene preservata (più si applica più perdo dettagli, ma velocizzo la computazione)        
+
+   Per vedere il numero di triangoli: Tasto "Wireframe" in alto nella barra a sx        
+
+Cristian Davide Conte
