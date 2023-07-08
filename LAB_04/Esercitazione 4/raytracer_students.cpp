@@ -137,13 +137,14 @@ RayTracer::TraceRay (Ray & ray, Hit & hit, int bounce_count) const
 	  //Crea soft shadows se specificato da riga di comando.
 	  //Altrimenti usa le hard shadows.
 	  if (args->softShadow) {
-		  /*
 		  //La light area viene divisa tramite una griglia di (1 / increment_factor)^2 punti.
 		  //Ogni punto della griglia viene utilizzato per il calcolo della soft shadow.
 		  Vec3f v_start, v_end;
-		  const float increment_factor = 0.1; //The lower the more precise the shadows will be
+		  const float increment_factor = std::floor(std::sqrt((float)args->num_shadow_samples)); //The lower the more precise the shadows will be
+		  const float initial_rays = increment_factor * increment_factor;
+		  const float remaning_rays = (float)args->num_shadow_samples - initial_rays;
 
-		  for (float j = 0; j <= 1; j+=increment_factor) {
+		  for (float j = 0; j <= 1; j+=1.0f/increment_factor) {
 			  //(*f)[0]->get() bottom-left face vertex
 			  //(*f)[1]->get() top-left face vertex
 			  //(*f)[2]->get() top-right face vertex
@@ -152,16 +153,22 @@ RayTracer::TraceRay (Ray & ray, Hit & hit, int bounce_count) const
 			  v_start = lerp((*f)[0]->get(), (*f)[1]->get(), j);
 			  v_end = lerp((*f)[3]->get(), (*f)[2]->get(), j);
 			  
-			  for (float k = 0; k <= 1; k+=increment_factor) {
+			  for (float k = 0; k <= 1; k+=1.0f/increment_factor) {
 				  pointsOnLight.push_back(lerp(v_start, v_end, k));
 			  }
 		  }
-		  */
 
-		  //Random interpolation between the face vertices (better looking)
-		  for (int i = 0; i < 100; i++) {
+		  //Remaing points are randomly taken
+		  for (int i = 0; i < remaning_rays; i++) {
 			  pointsOnLight.push_back(f->RandomPoint());
 		  }
+
+		  /*
+		  //Random interpolation between the face vertices (worst)
+		  for (int i = 0; i < args->num_shadow_samples; i++) {
+			  pointsOnLight.push_back(f->RandomPoint());
+		  }
+		  */
 	  } else {
 		  //La luce è approssimata ad un punto solo (hard shadows)
 		  pointsOnLight.push_back(f->computeCentroid()); 
@@ -190,7 +197,7 @@ RayTracer::TraceRay (Ray & ray, Hit & hit, int bounce_count) const
 			  //    la luce i non contribuisce alla luminosita' di point.
 			  if (dista.Length() < 0.01) {
 				  if (normal.Dot3(dirToLight) > 0) {
-					  Vec3f lightColor = 0.2 * f->getMaterial()->getEmittedColor() * f->getArea();
+					  Vec3f lightColor = (1.0f / pointsOnLight.size()) * 0.2f * f->getMaterial()->getEmittedColor() * f->getArea();
 					  answer += m->Shade(ray, hit, dirToLight, lightColor, args);
 				  }
 			  }
@@ -199,14 +206,7 @@ RayTracer::TraceRay (Ray & ray, Hit & hit, int bounce_count) const
 			  }
 		  }
 	  }
-
-	  if (normal.Dot3 (dirToLight) > 0)
-	  {
-		Vec3f lightColor = 0.2 * f->getMaterial ()->getEmittedColor () * f->getArea ();
-		answer += m->Shade (ray, hit, dirToLight, lightColor, args);
-	  }
 	}
-    
   }
 
   return answer;
