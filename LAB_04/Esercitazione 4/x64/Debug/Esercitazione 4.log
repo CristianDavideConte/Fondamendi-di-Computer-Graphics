@@ -1,7 +1,7 @@
 ﻿  raytracer_students.cpp
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\mesh.h(37,1): warning C4267: 'return': conversione da 'size_t' a 'int'. Possibile perdita di dati.
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\mesh.h(71,1): warning C4267: 'return': conversione da 'size_t' a 'int'. Possibile perdita di dati.
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\mesh.h(91,1): warning C4267: 'return': conversione da 'size_t' a 'int'. Possibile perdita di dati.
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\raytracer_students.cpp(126,45): warning C4267: 'inizializzazione': conversione da 'size_t' a 'int'. Possibile perdita di dati.
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\face.h(52): warning C4715: 'Face::operator[]': non tutti i percorsi di controllo restituiscono un valore
-  Esercitazione 4.vcxproj -> F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_04\Esercitazione 4\x64\Debug\Esercitazione 4.exe
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_04\Esercitazione 4\mesh.h(37,1): warning C4267: 'return': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_04\Esercitazione 4\mesh.h(71,1): warning C4267: 'return': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_04\Esercitazione 4\mesh.h(91,1): warning C4267: 'return': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_04\Esercitazione 4\raytracer_students.cpp(126,45): warning C4267: 'inizializzazione': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_04\Esercitazione 4\face.h(52): warning C4715: 'Face::operator[]': non tutti i percorsi di controllo restituiscono un valore
+  Esercitazione 4.vcxproj -> F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_04\Esercitazione 4\x64\Debug\Esercitazione 4.exe

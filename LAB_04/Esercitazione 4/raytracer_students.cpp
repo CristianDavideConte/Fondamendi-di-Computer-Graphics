@@ -140,10 +140,10 @@ RayTracer::TraceRay (Ray & ray, Hit & hit, int bounce_count) const
 		  //La light area viene divisa tramite una griglia di (1 / increment_factor)^2 punti.
 		  //Ogni punto della griglia viene utilizzato per il calcolo della soft shadow.
 		  Vec3f v_start, v_end;
-		  const float increment_factor = std::floor(std::sqrt((float)args->num_shadow_samples)); //The lower the more precise the shadows will be
-		  const float initial_rays = increment_factor * increment_factor;
+		  const float increment_factor = std::floor(std::sqrt((float)args->num_shadow_samples)) - 1.0f; //The lower the more precise the shadows will be
+		  const float initial_rays = (increment_factor + 1) * (increment_factor + 1);
 		  const float remaning_rays = (float)args->num_shadow_samples - initial_rays;
-
+		  
 		  for (float j = 0; j <= 1; j+=1.0f/increment_factor) {
 			  //(*f)[0]->get() bottom-left face vertex
 			  //(*f)[1]->get() top-left face vertex
