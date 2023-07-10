@@ -1,0 +1,86 @@
+﻿  LAB_07_students.cpp
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(331,34): warning C4267: 'inizializzazione': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(331,34): warning C4267: 'inizializzazione': conversione da 'size_t' a 'const int'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(363,39): warning C4267: 'argomento': conversione da 'size_t' a '_Ty'. Possibile perdita di dati.
+          with
+          [
+              _Ty=int
+          ]
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(379,39): warning C4267: 'argomento': conversione da 'size_t' a '_Ty'. Possibile perdita di dati.
+          with
+          [
+              _Ty=int
+          ]
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(395,39): warning C4267: 'argomento': conversione da 'size_t' a '_Ty'. Possibile perdita di dati.
+          with
+          [
+              _Ty=int
+          ]
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(400,9): warning C4101: 'textureID': variabile locale senza riferimenti
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(479,27): warning C4244: '=': conversione da 'double' a 'GLubyte'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(480,27): warning C4244: '=': conversione da 'double' a 'GLubyte'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(481,27): warning C4244: '=': conversione da 'double' a 'GLubyte'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(506,39): warning C4267: 'argomento': conversione da 'size_t' a '_Ty'. Possibile perdita di dati.
+          with
+          [
+              _Ty=int
+          ]
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(507,45): warning C4267: '=': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(524,39): warning C4267: 'argomento': conversione da 'size_t' a '_Ty'. Possibile perdita di dati.
+          with
+          [
+              _Ty=int
+          ]
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(541,39): warning C4267: 'argomento': conversione da 'size_t' a '_Ty'. Possibile perdita di dati.
+          with
+          [
+              _Ty=int
+          ]
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(546,39): warning C4267: 'argomento': conversione da 'size_t' a '_Ty'. Possibile perdita di dati.
+          with
+          [
+              _Ty=int
+          ]
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(577,39): warning C4267: 'argomento': conversione da 'size_t' a '_Ty'. Possibile perdita di dati.
+          with
+          [
+              _Ty=int
+          ]
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(578,43): warning C4267: 'argomento': conversione da 'size_t' a '_Ty'. Possibile perdita di dati.
+          with
+          [
+              _Ty=int
+          ]
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(582,39): warning C4267: 'argomento': conversione da 'size_t' a '_Ty'. Possibile perdita di dati.
+          with
+          [
+              _Ty=int
+          ]
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(583,43): warning C4267: 'argomento': conversione da 'size_t' a '_Ty'. Possibile perdita di dati.
+          with
+          [
+              _Ty=int
+          ]
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(605,39): warning C4267: 'argomento': conversione da 'size_t' a '_Ty'. Possibile perdita di dati.
+          with
+          [
+              _Ty=int
+          ]
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(606,45): warning C4267: '=': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(879,31): warning C4305: 'argomento': troncamento da 'double' a 'GLclampf'
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(961,65): warning C4267: 'argomento': conversione da 'size_t' a 'GLsizei'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(1052,72): warning C4267: 'argomento': conversione da 'size_t' a 'GLsizei'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(1073,12): warning C4244: 'inizializzazione': conversione da 'GLfloat' a 'int'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(1196,47): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(1196,44): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(1197,57): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(1197,39): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(1205,15): warning C4244: 'inizializzazione': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(1294,75): warning C4267: '=': conversione da 'size_t' a 'int'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(1363,35): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\LAB_07_students.cpp(1364,19): warning C4244: '=': conversione da 'double' a 'T'. Possibile perdita di dati.
+          with
+          [
+              T=float
+          ]
+  Esercitazione 7.vcxproj -> F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_07\Esercitazione 7\x64\Debug\Esercitazione 7.exe
