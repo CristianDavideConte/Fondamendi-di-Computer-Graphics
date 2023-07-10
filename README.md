@@ -1,4 +1,4 @@
-# Fondamendi di Computer Graphics M
+# Fondamenti di Computer Graphics M
 In questa repo sono presenti cartelle contenenti: 
 - file relativi alle esercitazioni (C++, GLSL, blender, ecc...)
 - report di ogni esercitazione
