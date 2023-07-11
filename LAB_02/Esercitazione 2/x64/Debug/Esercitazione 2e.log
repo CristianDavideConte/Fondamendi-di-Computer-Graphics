@@ -1,28 +1,28 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: la directory intermedia (x64\Debug\) contiene file condivisi da un altro progetto (Esercitazione 2e.vcxproj). Tale condizione può comportare un comportamento di pulizia e ricompilazione non corretto.
   LAB_02.cpp
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(135,22): warning C4244: 'inizializzazione': conversione da 'float' a '__int64'. Possibile perdita di dati.
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(177,21): warning C4244: '=': conversione da 'const __int64' a 'float'. Possibile perdita di dati.
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(196,20): warning C4244: '+=': conversione da 'float' a '__int64'. Possibile perdita di dati.
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(261,68): warning C4244: 'argomento': conversione da 'double' a 'float'. Possibile perdita di dati.
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(262,40): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(267,68): warning C4244: 'argomento': conversione da 'double' a 'float'. Possibile perdita di dati.
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(268,40): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(273,68): warning C4244: 'argomento': conversione da 'double' a 'float'. Possibile perdita di dati.
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(274,40): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(428,52): warning C4838: la conversione da 'double' a 'float' richiede una conversione che supporta un minor numero di dati
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(428,52): warning C4244: 'inizializzazione': conversione da 'double' a 'float'. Possibile perdita di dati.
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(581,37): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(582,37): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(588,41): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(589,41): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(667,4): warning C4244: 'argomento': conversione da 'const double' a 'float'. Possibile perdita di dati.
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(696,35): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(697,18): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(726,45): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(730,26): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(732,69): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(734,71): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(736,73): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(1003,24): warning C4244: 'argomento': conversione da '__int64' a 'unsigned int'. Possibile perdita di dati.
-F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(1086,46): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
-  Esercitazione 2e.vcxproj -> F:\gitHub Hosts\Fondamendi-di-Computer-Graphics\LAB_02\Esercitazione 2\x64\Debug\Esercitazione 2.exe
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(135,22): warning C4244: 'inizializzazione': conversione da 'float' a '__int64'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(177,21): warning C4244: '=': conversione da 'const __int64' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(196,20): warning C4244: '+=': conversione da 'float' a '__int64'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(261,68): warning C4244: 'argomento': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(262,40): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(267,68): warning C4244: 'argomento': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(268,40): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(273,68): warning C4244: 'argomento': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(274,40): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(428,52): warning C4838: la conversione da 'double' a 'float' richiede una conversione che supporta un minor numero di dati
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(428,52): warning C4244: 'inizializzazione': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(581,37): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(582,37): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(588,41): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(589,41): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(667,4): warning C4244: 'argomento': conversione da 'const double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(696,35): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(697,18): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(726,45): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(730,26): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(732,69): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(734,71): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(736,73): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(1003,24): warning C4244: 'argomento': conversione da '__int64' a 'unsigned int'. Possibile perdita di dati.
+F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_02\Esercitazione 2\LAB_02.cpp(1086,46): warning C4244: 'argomento': conversione da 'int' a 'float'. Possibile perdita di dati.
+  Esercitazione 2e.vcxproj -> F:\gitHub Hosts\Fondamenti-di-Computer-Graphics\LAB_02\Esercitazione 2\x64\Debug\Esercitazione 2.exe

@@ -36,7 +36,7 @@ based on the OpenGL Shading Language (GLSL) specifications.
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
 
-#define SHIFT_WHEEL_UP 11
+#define SHIFT_WHEEL_UP 11     
 #define SHIFT_WHEEL_DOWN 12
 #define CTRL_WHEEL_UP 19
 #define CTRL_WHEEL_DOWN 20
@@ -266,6 +266,8 @@ void calc_tangents(Mesh* mesh);
 void printToScreen();
 //Sorting based on camera distance
 vector<Object> sortByDistance(vector<Object> obj);
+//Computes the bezier curve points based on the camera path keyframes
+void computeCameraPath();
 
 struct further_from_camera {
 	inline bool operator() (const Object obj1, const Object obj2)
@@ -325,9 +327,7 @@ float* deCasteljau(float t, float iterArray[MaxNumPts + 1][3], int numPoints) {
 	return iterArray[0]; // [x, y, z] coordinates of the bezier curve in t
 }
 
-void computeCameraPath() {
-	path.erase(path.begin(), path.end());
-	
+void computeCameraPath() {	
 	const int dim = keyframes.size();
 	for (float k = 0; k <= MaxNumPtsCurve; k++) {
 		float t = k / MaxNumPtsCurve;
@@ -452,9 +452,10 @@ void load_procedural_texture_torus() {
 	generate_and_load_buffers(true, &surface);
 	Object obj = {};
 	obj.mesh = surface;
-	obj.material = MaterialType::NO_MATERIAL;
-	obj.shading = ShadingType::TEXTURE_ONLY;
-	
+	obj.material = MaterialType::SLATE;
+	obj.shading = ShadingType::TEXTURE_PHONG;
+	obj.name = "Torus";
+
 	const int texture_size = 64;
 	GLubyte image[texture_size][texture_size][3];
 
@@ -500,7 +501,6 @@ void load_procedural_texture_torus() {
 		image
 	); //Al posto di passare una texture passo la mia image (texture generata dinamicamente)
 
-	obj.name = "Torus";
 	obj.M = glm::translate(glm::mat4(1), glm::vec3(-5., 0., 5.));
 	objects.push_back(obj);
 	movables.push_back(objects.size() - 1);
@@ -1268,14 +1268,19 @@ void keyboardDown(unsigned char key, int x, int y)
 		if(path.size() > 0) isAnimationPlaying = !isAnimationPlaying;
 		break;
 	case 'k'://Insert camera path keypoint
+	case 'K'://Insert camera path keypoint
+		path.erase(path.begin(), path.end());
 		if(keyframes.size() < MaxNumPts) keyframes.push_back(ViewSetup.position);
-		if(keyframes.size() > 2) computeCameraPath();
+		if(keyframes.size() > 1) computeCameraPath();
 		break;
 	case 'l'://Remove last camera path keypoint
+	case 'L'://Remove last camera path keypoint
+		path.erase(path.begin(), path.end());
 		if (keyframes.size() > 0) keyframes.pop_back();
-		if (keyframes.size() > 2) computeCameraPath();
+		if (keyframes.size() > 1) computeCameraPath();
 		break;
 	case 'c'://Reset camera path movement
+	case 'C'://Reset camera path movement
 		isAnimationPlaying = false;
 		keyframes.erase(keyframes.begin(), keyframes.end());
 		path.erase(path.begin(), path.end());

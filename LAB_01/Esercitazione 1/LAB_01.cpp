@@ -116,16 +116,19 @@ void myKeyboardFunc(unsigned char key, int x, int y)
 		glutPostRedisplay();
 		break;
 	case 't': //C0
+	case 'T':
 		TCBContinuity = 0.5f;
 		TCBAlpha = 0.0f;
 		glutPostRedisplay();
 		break;
 	case 'c': //C1
+	case 'C':
 		TCBContinuity = 0.0f;
 		TCBAlpha = 0.0f;
 		glutPostRedisplay();
 		break;
 	case 'g': //G1
+	case 'G':
 		TCBContinuity = 0.0f;
 		TCBAlpha = 0.5f;
 		glutPostRedisplay();
