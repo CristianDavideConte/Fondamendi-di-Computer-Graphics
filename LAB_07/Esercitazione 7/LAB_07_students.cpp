@@ -345,7 +345,7 @@ void computeCameraPath() {
 		temp[dim][2] = keyframes.at(0)[2];
 
 		float *point = deCasteljau(t, temp, dim + 1);
-		path.push_back(glm::vec4(point[0], point[1], point[2], 0.0f));
+		path.push_back(glm::vec4(point[0], point[1], point[2], 0.0f)); //Quaternion-like structure with w=0
 	}
 }
 
@@ -1441,16 +1441,16 @@ void modifyModelMatrix(glm::vec3 translation_vector, glm::vec3 rotation_vector, 
 		objects[movables[selected_obj]].M = glm::inverse(objects[movables[selected_obj]].M);
 
 		//rototranslation + scaling
-		objects[movables[selected_obj]].M = glm::scale(objects[movables[selected_obj]].M, scaling_vector);
 		objects[movables[selected_obj]].M = glm::translate(objects[movables[selected_obj]].M, translation_vector);
+		objects[movables[selected_obj]].M = glm::scale(objects[movables[selected_obj]].M, scaling_vector);
 		objects[movables[selected_obj]].M = glm::rotate(objects[movables[selected_obj]].M, angle, rotation_vector);
 
 		objects[movables[selected_obj]].M = glm::inverse(objects[movables[selected_obj]].M);
 	}
 	else if (TransformMode == OCS) {
 		//rototranslation + scaling
-		objects[movables[selected_obj]].M = glm::scale(objects[movables[selected_obj]].M, scaling_vector);
 		objects[movables[selected_obj]].M = glm::translate(objects[movables[selected_obj]].M, translation_vector);
+		objects[movables[selected_obj]].M = glm::scale(objects[movables[selected_obj]].M, scaling_vector);
 		objects[movables[selected_obj]].M = glm::rotate(objects[movables[selected_obj]].M, angle, rotation_vector);
 	}
 }

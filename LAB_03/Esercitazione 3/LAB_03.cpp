@@ -1015,15 +1015,15 @@ void modifyModelMatrix(glm::vec3 translation_vector, glm::vec3 rotation_vector, 
 		objects[selected_obj].M = glm::inverse(objects[selected_obj].M);
 
 		//rototranslation + scaling
-		objects[selected_obj].M = glm::scale(objects[selected_obj].M, scaling_vector);
 		objects[selected_obj].M = glm::translate(objects[selected_obj].M, translation_vector);
+		objects[selected_obj].M = glm::scale(objects[selected_obj].M, scaling_vector);
 		objects[selected_obj].M = glm::rotate(objects[selected_obj].M, angle, rotation_vector);
 
 		objects[selected_obj].M = glm::inverse(objects[selected_obj].M);
 	} else if (TransformMode == OCS) {
 		//rototranslation + scaling
-		objects[selected_obj].M = glm::scale(objects[selected_obj].M, scaling_vector);
 		objects[selected_obj].M = glm::translate(objects[selected_obj].M, translation_vector);
+		objects[selected_obj].M = glm::scale(objects[selected_obj].M, scaling_vector);
 		objects[selected_obj].M = glm::rotate(objects[selected_obj].M, angle, rotation_vector);
 	}
 }
