@@ -345,7 +345,7 @@ void initShader()
 {
 	// SHADERS configuration section
 	shaders_IDs.resize(NUM_SHADERS);
-	light_uniforms.resize(7); // allocate space for uniforms of PHONG,BLINN,GOURAND,TOON,WAVE
+	light_uniforms.resize(6); // allocate space for uniforms of PHONG,BLINN,GOURAND,TOON,WAVE
 	base_uniforms.resize(NUM_SHADERS); // allocate space for uniforms of PHONG,BLINN,GOURAND,TOON,WAVE,PASS_THROUGH
 	BaseShaderUniform base_unif = {};
 	LightShaderUniform light_unif = {};
