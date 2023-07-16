@@ -463,10 +463,11 @@ void load_procedural_texture_torus() {
 		//Procedural checkerboard texture
 		for (int i = 0; i < texture_size; i++) {
 			for (int j = 0; j < texture_size; j++) {
-				int c = ((((i & 0x8) == 0) ^ (((j & 0x8)) == 0))) * 255;
-				image[i][j][0] = (GLubyte)c;
-				image[i][j][1] = (GLubyte)c;
-				image[i][j][2] = (GLubyte)c;
+				const GLubyte c = ((((i & 0x8) == 0) ^ (((j & 0x8)) == 0))) * 255;
+
+				image[i][j][0] = c;
+				image[i][j][1] = c;
+				image[i][j][2] = c;
 			}
 		}
 	} else {
@@ -474,12 +475,14 @@ void load_procedural_texture_torus() {
 		PerlinNoise pn;
 		for (int i = 0; i < texture_size; i++) {
 			for (int j = 0; j < texture_size; j++) {
-				double x = (double)j / ((double)texture_size);
-				double y = (double)i / ((double)texture_size);
-				double n = pn.noise(5 * x, 5 * y, 1);
-				image[i][j][0] = floor(255 * n);
-				image[i][j][1] = floor(255 * n);
-				image[i][j][2] = floor(255 * n);
+				const double x = (double)j / ((double)texture_size);
+				const double y = (double)i / ((double)texture_size);
+				
+				const GLubyte c = floor(pn.noise(5 * x, 5 * y, 1) * 255);
+
+				image[i][j][0] = c;
+				image[i][j][1] = c;
+				image[i][j][2] = c;
 			}
 		}
 	}
